@@ -14,7 +14,7 @@
 
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(to bottom right, #FF8C00, #FFD700); /* Gradient Background */
+            background-color: #1E2A47; /* Dark Blue Background */
             color: #fff;
             padding: 50px;
             animation: fadeIn 1.5s ease-out;
@@ -47,7 +47,7 @@
         section h2 {
             font-size: 2rem;
             margin-bottom: 10px;
-            color: #FFD700;
+            color: #FFD700; /* Gold color */
         }
 
         ul {
@@ -77,6 +77,24 @@
             color: #FF8C00;
         }
 
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #FF8C00; /* Orange color */
+            color: #fff;
+            font-size: 1.2rem;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .button:hover {
+            background-color: #FFD700; /* Gold hover effect */
+            transform: scale(1.05);
+        }
+
         footer {
             text-align: center;
             margin-top: 40px;
@@ -92,16 +110,6 @@
         @keyframes fadeIn {
             0% { opacity: 0; }
             100% { opacity: 1; }
-        }
-
-        @keyframes slideUp {
-            0% { transform: translateY(20px); opacity: 0; }
-            100% { transform: translateY(0); opacity: 1; }
-        }
-
-        /* Smooth hover effect for links */
-        ul li a:hover {
-            color: #FF8C00;
         }
     </style>
 </head>
@@ -132,6 +140,13 @@
     <section>
         <h2>Contact Me</h2>
         <p>Email: <a href="mailto:vxrcz.dev@gmail.com">vxrcz.dev@gmail.com</a></p>
+    </section>
+
+    <section>
+        <h2>Connect with Me</h2>
+        <!-- Add your social media or other relevant links -->
+        <a href="https://github.com/vxrcz" class="button" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/vxrcz" class="button" target="_blank">LinkedIn</a>
     </section>
 
     <footer>
