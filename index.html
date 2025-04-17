@@ -5,89 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vxrcz's Portfolio</title>
     <style>
+        /* General styles */
         body {
+            font-family: 'Arial', sans-serif;
             margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background: #0d1117;
-            color: #c9d1d9;
-        }
-
-        header {
-            background: #161b22;
-            padding: 40px;
+            padding: 0;
+            background: #f0f0f0;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             text-align: center;
+            flex-direction: column;
         }
 
-        header h1 {
-            font-size: 2.5rem;
-            margin: 0;
-            color: #58a6ff;
+        h1 {
+            color: #1e90ff;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            animation: fadeIn 1.5s ease-out;
         }
 
-        header p {
-            font-size: 1.2rem;
-            color: #8b949e;
+        p {
+            font-size: 1.2em;
+            animation: fadeIn 2s ease-out;
         }
 
         section {
-            padding: 30px;
-            max-width: 800px;
-            margin: auto;
+            margin: 30px 0;
+            animation: slideUp 1.5s ease-out;
         }
 
         h2 {
-            color: #58a6ff;
-            border-bottom: 1px solid #30363d;
-            padding-bottom: 5px;
+            color: #444;
+            font-size: 2em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
         }
 
         ul {
-            list-style: none;
+            list-style-type: none;
             padding: 0;
         }
 
         li {
-            margin-bottom: 10px;
+            font-size: 1.2em;
+            padding: 8px 0;
+            transition: transform 0.3s ease;
+        }
+
+        li:hover {
+            transform: translateX(10px);
+            color: #1e90ff;
         }
 
         a {
-            color: #58a6ff;
             text-decoration: none;
+            color: #333;
         }
 
         a:hover {
-            text-decoration: underline;
+            color: #1e90ff;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            0% {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
         }
 
         footer {
+            position: fixed;
+            bottom: 10px;
+            width: 100%;
             text-align: center;
-            font-size: 0.9rem;
-            color: #8b949e;
-            padding: 20px;
-            border-top: 1px solid #30363d;
-            margin-top: 40px;
+            color: #888;
+            font-size: 1em;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Welcome to My Portfolio</h1>
-        <p>Hi, I’m <strong>vxrcz</strong>, a Python Developer.</p>
+        <p>Hi, I’m vxrcz, a Python Developer.</p>
     </header>
 
     <section>
         <h2>What I Do</h2>
         <ul>
-            <li>⚙️ Bot Development</li>
-            <li>🤖 Automation Scripts</li>
-            <li>🎮 Fun Projects</li>
+            <li>Bot Development</li>
+            <li>Automation Scripts</li>
+            <li>Fun Projects</li>
         </ul>
     </section>
 
     <section>
         <h2>Projects</h2>
         <ul>
-            <li><a href="#">No projects yet!</a></li>
+            <li><a href="https://github.com/your-username/project1">No project yet!</a></li>
+            <li><a href="https://github.com/your-username/project2">No project yet!</a></li>
+            <li><a href="https://github.com/your-username/project3">No project yet!</a></li>
         </ul>
     </section>
 
@@ -97,7 +130,7 @@
     </section>
 
     <footer>
-        &copy; 2025 vxrcz. All rights reserved.
+        <p>Created by vxrcz | All rights reserved</p>
     </footer>
 </body>
 </html>
