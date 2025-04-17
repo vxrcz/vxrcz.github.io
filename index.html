@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vxrcz's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        /* General Reset */
+        /* CSS Reset */
         * {
             margin: 0;
             padding: 0;
@@ -13,144 +14,118 @@
         }
 
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #1E2A47; /* Dark Blue Background */
-            color: #fff;
-            padding: 50px;
-            animation: fadeIn 1.5s ease-out;
+            font-family: 'Poppins', sans-serif;
+            background-color: #1E2A47;
+            color: white;
+            text-align: center;
+            margin: 0;
         }
 
         header {
-            text-align: center;
-            margin-bottom: 40px;
+            padding: 50px;
+            background: linear-gradient(45deg, #1E2A47, #00C9FF);
+            color: white;
+            text-transform: uppercase;
         }
 
-        header h1 {
-            font-size: 3rem;
+        h1 {
+            font-size: 3em;
             margin-bottom: 10px;
-            color: #fff;
         }
 
-        header p {
-            font-size: 1.5rem;
-            color: #F8F8FF;
-            opacity: 0.8;
+        p {
+            font-size: 1.2em;
+            margin-top: 5px;
         }
 
         section {
-            margin-bottom: 30px;
-            padding: 20px;
-            border-radius: 10px;
-            background-color: rgba(0, 0, 0, 0.7); /* Slight transparency */
+            padding: 30px 15px;
         }
 
-        section h2 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-            color: #FFD700; /* Gold color */
+        h2 {
+            font-size: 2em;
+            color: #00C9FF;
+            margin-bottom: 20px;
         }
 
         ul {
-            list-style: none;
-            padding-left: 0;
+            list-style-type: none;
         }
 
-        ul li {
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-            color: #F8F8FF;
-            transition: transform 0.3s ease;
-        }
-
-        ul li:hover {
-            transform: scale(1.1);
-            color: #FF8C00; /* Hover color */
+        li {
+            margin: 10px 0;
+            font-size: 1.2em;
         }
 
         a {
             text-decoration: none;
-            color: #FFD700;
-            transition: color 0.3s ease;
+            color: #00C9FF;
+            font-weight: bold;
+            transition: color 0.3s;
         }
 
         a:hover {
-            color: #FF8C00;
+            color: #fff;
         }
 
         .button {
             display: inline-block;
-            padding: 10px 20px;
-            margin-top: 20px;
-            background-color: #FF8C00; /* Orange color */
-            color: #fff;
-            font-size: 1.2rem;
-            text-align: center;
+            padding: 12px 24px;
+            background-color: #00C9FF;
+            color: white;
+            border: none;
             border-radius: 5px;
             text-decoration: none;
-            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-size: 1.1em;
+            margin: 20px 0;
+            transition: background-color 0.3s, transform 0.3s;
         }
 
         .button:hover {
-            background-color: #FFD700; /* Gold hover effect */
+            background-color: #00A7CC;
             transform: scale(1.05);
         }
 
         footer {
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        footer p {
-            font-size: 1.2rem;
-            color: #F8F8FF;
-            opacity: 0.7;
-        }
-
-        /* Animation */
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
+            background-color: #0B1421;
+            padding: 20px;
+            margin-top: 30px;
+            color: white;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hi, I’m vxrcz, a Python Developer.</p>
-    </header>
 
-    <section>
-        <h2>What I Do</h2>
-        <ul>
-            <li>Bot Development</li>
-            <li>Automation Scripts</li>
-            <li>Fun Projects</li>
-        </ul>
-    </section>
+<header>
+    <h1>Welcome to My Portfolio</h1>
+    <p>Hi, I’m vxrcz, a Python Developer</p>
+</header>
 
-    <section>
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="https://github.com/your-username/project1">No project yet!</a></li>
-            <li><a href="https://github.com/your-username/project2">No project yet!</a></li>
-            <li><a href="https://github.com/your-username/project3">No project yet!</a></li>
-        </ul>
-    </section>
+<section>
+    <h2>What I Do</h2>
+    <ul>
+        <li>Bot Development</li>
+        <li>Automation Scripts</li>
+        <li>Fun Projects</li>
+    </ul>
+</section>
 
-    <section>
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:vxrcz.dev@gmail.com">vxrcz.dev@gmail.com</a></p>
-    </section>
+<section>
+    <h2>Projects</h2>
+    <ul>
+        <li><a href="https://github.com/your-username/project1">Project 1 - Coming Soon</a></li>
+        <li><a href="https://github.com/your-username/project2">Project 2 - Coming Soon</a></li>
+        <li><a href="https://github.com/your-username/project3">Project 3 - Coming Soon</a></li>
+    </ul>
+</section>
 
-    <section>
-        <h2>Connect with Me</h2>
-        <!-- Add your social media or other relevant links -->
-        <a href="https://github.com/vxrcz" class="button" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/vxrcz" class="button" target="_blank">LinkedIn</a>
-    </section>
+<section>
+    <a href="mailto:vxrcz.dev@gmail.com" class="button">Contact Me</a>
+</section>
 
-    <footer>
-        <p>© 2025 vxrcz. All Rights Reserved.</p>
-    </footer>
+<footer>
+    <p>&copy; 2025 vxrcz</p>
+</footer>
+
 </body>
 </html>
