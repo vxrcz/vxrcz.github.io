@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vxrcz's Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        /* CSS Reset */
         * {
             margin: 0;
             padding: 0;
@@ -14,91 +12,118 @@
         }
 
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #1E2A47;
-            color: white;
-            text-align: center;
-            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #1e2a47;
+            color: #fff;
+            line-height: 1.6;
         }
 
         header {
-            padding: 50px;
-            background: linear-gradient(45deg, #1E2A47, #00C9FF);
-            color: white;
-            text-transform: uppercase;
+            text-align: center;
+            padding: 50px 0;
+            background-color: #222;
         }
 
-        h1 {
-            font-size: 3em;
+        header h1 {
+            font-size: 2.5rem;
             margin-bottom: 10px;
+            color: #fff;
         }
 
-        p {
-            font-size: 1.2em;
-            margin-top: 5px;
+        header p {
+            font-size: 1.2rem;
+            color: #aaa;
         }
 
         section {
-            padding: 30px 15px;
+            padding: 50px 20px;
+            text-align: center;
         }
 
-        h2 {
-            font-size: 2em;
-            color: #00C9FF;
+        section h2 {
+            font-size: 2rem;
             margin-bottom: 20px;
+            color: #ff6f61;
         }
 
-        ul {
+        section ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
             list-style-type: none;
         }
 
-        li {
-            margin: 10px 0;
-            font-size: 1.2em;
+        section ul li {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        section ul li:hover {
+            transform: translateY(-10px);
+            background-color: #ff6f61;
         }
 
         a {
             text-decoration: none;
-            color: #00C9FF;
+            color: #fff;
             font-weight: bold;
-            transition: color 0.3s;
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid #ff6f61;
+            border-radius: 25px;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         a:hover {
-            color: #fff;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 12px 24px;
-            background-color: #00C9FF;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 1.1em;
-            margin: 20px 0;
-            transition: background-color 0.3s, transform 0.3s;
-        }
-
-        .button:hover {
-            background-color: #00A7CC;
-            transform: scale(1.05);
+            background-color: #ff6f61;
+            color: #222;
         }
 
         footer {
-            background-color: #0B1421;
-            padding: 20px;
-            margin-top: 30px;
-            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #222;
+            color: #aaa;
         }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .card {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            background-color: #ff6f61;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+
+        .card p {
+            font-size: 1rem;
+        }
+
     </style>
 </head>
 <body>
 
 <header>
     <h1>Welcome to My Portfolio</h1>
-    <p>Hi, I’m vxrcz, a Python Developer</p>
+    <p>Hi, I’m vxrcz, a Python Developer.</p>
 </header>
 
 <section>
@@ -112,19 +137,29 @@
 
 <section>
     <h2>Projects</h2>
-    <ul>
-        <li><a href="https://github.com/your-username/project1">Project 1 - Coming Soon</a></li>
-        <li><a href="https://github.com/your-username/project2">Project 2 - Coming Soon</a></li>
-        <li><a href="https://github.com/your-username/project3">Project 3 - Coming Soon</a></li>
-    </ul>
+    <div class="card-container">
+        <div class="card">
+            <h3>Project 1</h3>
+            <p>This is a cool Python bot I created. More details soon!</p>
+        </div>
+        <div class="card">
+            <h3>Project 2</h3>
+            <p>Check out some automation scripts I've written. More coming soon!</p>
+        </div>
+        <div class="card">
+            <h3>Project 3</h3>
+            <p>Fun little project I'm working on. Stay tuned!</p>
+        </div>
+    </div>
 </section>
 
 <section>
-    <a href="mailto:vxrcz.dev@gmail.com" class="button">Contact Me</a>
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:vxrcz.dev@gmail.com">vxrcz.dev@gmail.com</a></p>
 </section>
 
 <footer>
-    <p>&copy; 2025 vxrcz</p>
+    <p>Made with ❤️ by vxrcz | All Rights Reserved</p>
 </footer>
 
 </body>
